@@ -1,72 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Samuel Asante | Cyber Security</title>
+<meta charset="UTF-8">
+<title>Samuel Asante | Cyber Security Engineer</title>
+
 <style>
+
 body{
-font-family: Arial;
-margin:40px;
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
 background:#0f172a;
 color:white;
+line-height:1.6;
 }
 
-a{
-color:#38bdf8;
-text-decoration:none;
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#020617;
 }
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+padding:120px 60px;
+max-width:900px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+color:#94a3b8;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SECTION */
 
 section{
-margin-bottom:40px;
+padding:60px;
+max-width:1000px;
 }
 
-h1{
-font-size:42px;
+/* PROJECT CARDS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
+padding:25px;
 border-radius:10px;
-margin-bottom:15px;
+transition:transform 0.2s;
 }
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-top:0;
+}
+
+.card a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill{
+background:#1e293b;
+padding:8px 14px;
+border-radius:5px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+color:#94a3b8;
+}
+
 </style>
 </head>
 
 <body>
 
-<h1>Samuel Asante</h1>
-<p>Aspiring Cyber Security Engineer | University of Surrey</p>
+<nav>
+<div><strong>Samuel Asante</strong></div>
 
-<section>
+<div>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<div class="hero">
+
+<h1>Aspiring Cyber Security Engineer</h1>
+
+<p>
+Computer Science student at the University of Surrey building security tools
+for log analysis, attack detection and secure web applications.
+</p>
+
+<a class="btn" href="https://github.com/Adonaaii">View GitHub</a>
+
+</div>
+
+
+<section id="projects">
+
 <h2>Projects</h2>
+
+<div class="projects">
 
 <div class="card">
 <h3>CSIRT Security Analyzer</h3>
-<p>Python log analysis tool detecting suspicious activity and generating
-incident reports.</p>
+<p>
+Real-time Python log analysis tool that detects suspicious activity
+and generates incident reports similar to SOC workflows.
+</p>
 <a href="https://github.com/Adonaaii/log-analyzer">View Project</a>
 </div>
 
 <div class="card">
 <h3>LogGen Security Tool</h3>
-<p>Generates realistic Apache-style logs with simulated cyber attacks
-for security testing.</p>
+<p>
+Apache-style log generator simulating cyber attacks including
+SQL injection, brute-force and XSS attempts.
+</p>
 <a href="https://github.com/Adonaaii/log-generator">View Project</a>
+</div>
+
+<div class="card">
+<h3>SecureLogX</h3>
+<p>
+Security-focused log monitoring system for identifying threats
+and analysing suspicious traffic patterns.
+</p>
+<a href="https://github.com/Adonaaii/securelogx">View Project</a>
+</div>
+
 </div>
 
 </section>
 
-<section>
-<h2>Skills</h2>
-<p>Python • Java • C++ • SQL • Django • Linux • Threat Detection</p>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">C++</div>
+<div class="skill">SQL</div>
+<div class="skill">Django</div>
+<div class="skill">Linux</div>
+<div class="skill">Log Analysis</div>
+<div class="skill">Threat Detection</div>
+
+</div>
+
 </section>
 
-<section>
+
+<section id="contact">
+
 <h2>Contact</h2>
+
 <p>Email: lkweku67@gmail.com</p>
 <p>GitHub: github.com/Adonaaii</p>
 <p>LinkedIn: linkedin.com/in/larbi68</p>
+
 </section>
+
+
+<footer>
+
+<p>© 2026 Samuel Asante</p>
+
+</footer>
 
 </body>
 </html>
